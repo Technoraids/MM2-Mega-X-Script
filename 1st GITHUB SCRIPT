@@ -1,0 +1,420 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Open = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local Step = Instance.new("Frame")
+local All = Instance.new("ImageLabel")
+local Outer = Instance.new("ImageLabel")
+local Title = Instance.new("TextLabel")
+local TextLabel_Roundify_12px = Instance.new("ImageLabel")
+local Noclip = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local InfJump = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local Speed = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local UICorner_8 = Instance.new("UICorner")
+local Jump = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
+local ESP = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local TextLabel_6 = Instance.new("TextLabel")
+local UICorner_12 = Instance.new("UICorner")
+local ESP_2 = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local TextLabel_7 = Instance.new("TextLabel")
+local UICorner_14 = Instance.new("UICorner")
+local TextLabel_8 = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local Log = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local TextLabel_9 = Instance.new("TextLabel")
+local UICorner_17 = Instance.new("UICorner")
+local Login = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local TextLabel_10 = Instance.new("TextLabel")
+local UICorner_19 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.AnchorPoint = Vector2.new(0.5, 0.5)
+Open.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Open.Position = UDim2.new(0.071326673, 0, 0.68897146, 0)
+Open.Selectable = false
+Open.Size = UDim2.new(0, 200, 0, 50)
+Open.Visible = false
+Open.Font = Enum.Font.GothamSemibold
+Open.Text = "Open UI"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+UICorner.Parent = Open
+
+TextLabel.Parent = Open
+TextLabel.AnchorPoint = Vector2.new(0.5, 0)
+TextLabel.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+TextLabel.Position = UDim2.new(0.5, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 56)
+TextLabel.ZIndex = 0
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.TextColor3 = Color3.fromRGB(39, 39, 39)
+TextLabel.TextSize = 14.000
+
+UICorner_2.Parent = TextLabel
+
+Step.Name = "Step"
+Step.Parent = ScreenGui
+Step.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Step.BackgroundTransparency = 1.000
+Step.Position = UDim2.new(0.461361885, 0, 0.437422544, 0)
+Step.Size = UDim2.new(0, 100, 0, 100)
+Step.Visible = false
+Step.ZIndex = 3
+
+All.Name = "All"
+All.Parent = Step
+All.AnchorPoint = Vector2.new(0.5, 0.5)
+All.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+All.BackgroundTransparency = 1.000
+All.Position = UDim2.new(0.499777079, 0, 0.49938041, 0)
+All.Size = UDim2.new(0, 599, 0, 372)
+All.ZIndex = 2
+All.Image = "rbxassetid://3570695787"
+All.ImageColor3 = Color3.fromRGB(58, 58, 58)
+All.ScaleType = Enum.ScaleType.Slice
+All.SliceCenter = Rect.new(100, 100, 100, 100)
+All.SliceScale = 0.120
+
+Outer.Name = "Outer"
+Outer.Parent = All
+Outer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Outer.BackgroundTransparency = 1.000
+Outer.Position = UDim2.new(0.000466308586, 0, 0.0189171247, 0)
+Outer.Size = UDim2.new(0, 599, 0, 375)
+Outer.Image = "rbxassetid://3570695787"
+Outer.ImageColor3 = Color3.fromRGB(54, 54, 54)
+Outer.ScaleType = Enum.ScaleType.Slice
+Outer.SliceCenter = Rect.new(100, 100, 100, 100)
+Outer.SliceScale = 0.120
+
+Title.Name = "Title"
+Title.Parent = All
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.000466308586, 0, 0, 0)
+Title.Size = UDim2.new(0, 598, 0, 50)
+Title.ZIndex = 2
+Title.Font = Enum.Font.GothamSemibold
+Title.Text = "MM2 Mega X Script V1"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+TextLabel_Roundify_12px.Name = "TextLabel_Roundify_12px"
+TextLabel_Roundify_12px.Parent = Title
+TextLabel_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_Roundify_12px.BackgroundTransparency = 1.000
+TextLabel_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_Roundify_12px.Image = "rbxassetid://3570695787"
+TextLabel_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+TextLabel_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+TextLabel_Roundify_12px.SliceScale = 0.120
+
+Noclip.Name = "Noclip"
+Noclip.Parent = All
+Noclip.AnchorPoint = Vector2.new(0.5, 0.5)
+Noclip.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Noclip.BorderSizePixel = 0
+Noclip.Position = UDim2.new(0.330144674, 0, 0.228494614, 0)
+Noclip.Size = UDim2.new(0, 190, 0, 50)
+Noclip.ZIndex = 3
+Noclip.Font = Enum.Font.GothamSemibold
+Noclip.Text = "Noclip"
+Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.TextScaled = true
+Noclip.TextSize = 14.000
+Noclip.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 6)
+UICorner_3.Parent = Noclip
+
+TextLabel_2.Parent = Noclip
+TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+TextLabel_2.Position = UDim2.new(0.5, 0, 0.560000002, 0)
+TextLabel_2.Size = UDim2.new(0, 190, 0, 56)
+TextLabel_2.ZIndex = 2
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = ""
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+UICorner_4.CornerRadius = UDim.new(0, 6)
+UICorner_4.Parent = TextLabel_2
+
+InfJump.Name = "Inf Jump"
+InfJump.Parent = All
+InfJump.AnchorPoint = Vector2.new(0.5, 0.5)
+InfJump.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+InfJump.BorderSizePixel = 0
+InfJump.Position = UDim2.new(0.669042885, 0, 0.228494614, 0)
+InfJump.Size = UDim2.new(0, 190, 0, 50)
+InfJump.ZIndex = 3
+InfJump.Font = Enum.Font.GothamSemibold
+InfJump.Text = "Inf Jump"
+InfJump.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfJump.TextScaled = true
+InfJump.TextSize = 14.000
+InfJump.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0, 6)
+UICorner_5.Parent = InfJump
+
+TextLabel_3.Parent = InfJump
+TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+TextLabel_3.Position = UDim2.new(0.5, 0, 0.560000002, 0)
+TextLabel_3.Size = UDim2.new(0, 190, 0, 56)
+TextLabel_3.ZIndex = 2
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = ""
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 14.000
+
+UICorner_6.CornerRadius = UDim.new(0, 6)
+UICorner_6.Parent = TextLabel_3
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(103, 103, 103)), ColorSequenceKeypoint.new(0.26, Color3.fromRGB(100, 100, 100)), ColorSequenceKeypoint.new(0.66, Color3.fromRGB(139, 139, 139)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Parent = All
+
+Speed.Name = "Speed"
+Speed.Parent = All
+Speed.AnchorPoint = Vector2.new(0.5, 0.5)
+Speed.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Speed.BorderSizePixel = 0
+Speed.Position = UDim2.new(0.328475296, 0, 0.454301059, 0)
+Speed.Size = UDim2.new(0, 190, 0, 50)
+Speed.ZIndex = 3
+Speed.Font = Enum.Font.GothamSemibold
+Speed.Text = "Speed Boost"
+Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Speed.TextScaled = true
+Speed.TextSize = 14.000
+Speed.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0, 6)
+UICorner_7.Parent = Speed
+
+TextLabel_4.Parent = Speed
+TextLabel_4.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+TextLabel_4.Position = UDim2.new(0.5, 0, 0.560000002, 0)
+TextLabel_4.Size = UDim2.new(0, 190, 0, 56)
+TextLabel_4.ZIndex = 2
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = ""
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextSize = 14.000
+
+UICorner_8.CornerRadius = UDim.new(0, 6)
+UICorner_8.Parent = TextLabel_4
+
+Jump.Name = "Jump"
+Jump.Parent = All
+Jump.AnchorPoint = Vector2.new(0.5, 0.5)
+Jump.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Jump.BorderSizePixel = 0
+Jump.Position = UDim2.new(0.669042885, 0, 0.454301059, 0)
+Jump.Size = UDim2.new(0, 190, 0, 50)
+Jump.ZIndex = 3
+Jump.Font = Enum.Font.GothamSemibold
+Jump.Text = "Jump Boost"
+Jump.TextColor3 = Color3.fromRGB(255, 255, 255)
+Jump.TextScaled = true
+Jump.TextSize = 14.000
+Jump.TextWrapped = true
+
+UICorner_9.CornerRadius = UDim.new(0, 6)
+UICorner_9.Parent = Jump
+
+TextLabel_5.Parent = Jump
+TextLabel_5.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+TextLabel_5.Position = UDim2.new(0.5, 0, 0.560000002, 0)
+TextLabel_5.Size = UDim2.new(0, 190, 0, 56)
+TextLabel_5.ZIndex = 2
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = ""
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.TextSize = 14.000
+
+UICorner_10.CornerRadius = UDim.new(0, 6)
+UICorner_10.Parent = TextLabel_5
+
+ESP.Name = "ESP"
+ESP.Parent = All
+ESP.AnchorPoint = Vector2.new(0.5, 0.5)
+ESP.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+ESP.BorderSizePixel = 0
+ESP.Position = UDim2.new(0.328475267, 0, 0.680107534, 0)
+ESP.Size = UDim2.new(0, 190, 0, 50)
+ESP.ZIndex = 3
+ESP.Font = Enum.Font.GothamSemibold
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESP.TextScaled = true
+ESP.TextSize = 14.000
+ESP.TextWrapped = true
+
+UICorner_11.CornerRadius = UDim.new(0, 6)
+UICorner_11.Parent = ESP
+
+TextLabel_6.Parent = ESP
+TextLabel_6.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+TextLabel_6.Position = UDim2.new(0.5, 0, 0.560000002, 0)
+TextLabel_6.Size = UDim2.new(0, 190, 0, 56)
+TextLabel_6.ZIndex = 2
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = ""
+TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.TextSize = 14.000
+
+UICorner_12.CornerRadius = UDim.new(0, 6)
+UICorner_12.Parent = TextLabel_6
+
+ESP_2.Name = "ESP"
+ESP_2.Parent = All
+ESP_2.AnchorPoint = Vector2.new(0.5, 0.5)
+ESP_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+ESP_2.BorderSizePixel = 0
+ESP_2.Position = UDim2.new(0.669042885, 0, 0.680107534, 0)
+ESP_2.Size = UDim2.new(0, 190, 0, 50)
+ESP_2.ZIndex = 3
+ESP_2.Font = Enum.Font.GothamSemibold
+ESP_2.Text = "Fly"
+ESP_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESP_2.TextScaled = true
+ESP_2.TextSize = 14.000
+ESP_2.TextWrapped = true
+
+UICorner_13.CornerRadius = UDim.new(0, 6)
+UICorner_13.Parent = ESP_2
+
+TextLabel_7.Parent = ESP_2
+TextLabel_7.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+TextLabel_7.Position = UDim2.new(0.5, 0, 0.560000002, 0)
+TextLabel_7.Size = UDim2.new(0, 190, 0, 56)
+TextLabel_7.ZIndex = 2
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = ""
+TextLabel_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.TextSize = 14.000
+
+UICorner_14.CornerRadius = UDim.new(0, 6)
+UICorner_14.Parent = TextLabel_7
+
+TextLabel_8.Parent = All
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0.030050084, 0, 0.956989229, 0)
+TextLabel_8.Size = UDim2.new(0, 562, 0, 16)
+TextLabel_8.ZIndex = 2
+TextLabel_8.Font = Enum.Font.GothamSemibold
+TextLabel_8.Text = "Made By TenLeafsFX#9384 and the unknon trader#6319"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = All
+Close.AnchorPoint = Vector2.new(0.5, 0.5)
+Close.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.965806246, 0, 0.0537634417, 0)
+Close.Size = UDim2.new(0, 41, 0, 40)
+Close.ZIndex = 3
+Close.Font = Enum.Font.GothamSemibold
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+UICorner_15.CornerRadius = UDim.new(0, 12)
+UICorner_15.Parent = Close
+
+Log.Name = "Log"
+Log.Parent = ScreenGui
+Log.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+Log.Position = UDim2.new(0.409370214, 0, 0.411134899, 0)
+Log.Size = UDim2.new(0, 235, 0, 139)
+
+UICorner_16.Parent = Log
+
+TextLabel_9.Parent = Log
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+TextLabel_9.Position = UDim2.new(0.0723404288, 0, 0.114123881, 0)
+TextLabel_9.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = "Script Has Loaded"
+TextLabel_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+UICorner_17.Parent = TextLabel_9
+
+Login.Name = "Login"
+Login.Parent = Log
+Login.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Login.Position = UDim2.new(0.076595746, 0, 0.547504544, 0)
+Login.Size = UDim2.new(0, 200, 0, 50)
+Login.Font = Enum.Font.SourceSans
+Login.Text = "OpenScript"
+Login.TextColor3 = Color3.fromRGB(0, 0, 0)
+Login.TextScaled = true
+Login.TextSize = 14.000
+Login.TextWrapped = true
+
+UICorner_18.Parent = Login
+
+TextLabel_10.Parent = Log
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel_10.Position = UDim2.new(-0.0595744699, 0, -0.245588347, 0)
+TextLabel_10.Size = UDim2.new(0, 264, 0, 34)
+TextLabel_10.Font = Enum.Font.SourceSans
+TextLabel_10.Text = "Open Script?"
+TextLabel_10.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextWrapped = true
+
+UICorner_19.Parent = TextLabel_10
